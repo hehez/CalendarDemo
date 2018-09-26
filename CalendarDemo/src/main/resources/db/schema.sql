@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS calendar_event (
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  	title VARCHAR(50) DEFAULT NULL,
+  	event_date DATE DEFAULT NULL,
+  	event_time TIME DEFAULT NULL,
+  	event_location VARCHAR(50) DEFAULT NULL,
+  	attendees VARCHAR(50) DEFAULT NULL,
+  	reminder_time TIMESTAMP DEFAULT NULL,
+  	is_reminded BOOLEAN DEFAULT NULL,
+);
+
+--
+CREATE TABLE IF NOT EXISTS event_attendee_list (
+	event_id BIGINT,
+	person_name VARCHAR(50) DEFAULT NULL,
+);
+
+--
+CREATE TABLE IF NOT EXISTS users (
+	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	username VARCHAR(50) DEFAULT NULL,
+	password VARCHAR(50) DEFAULT NULL,
+);
