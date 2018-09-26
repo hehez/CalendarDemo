@@ -1,6 +1,8 @@
 # CalendarDemo
-A calendar demo with spring boot.
-
+A calendar demo with spring boot.  
+```
+mvn spring-boot:run  
+```
 ## CRUD operation examples:
 
   * **search event:**  
